@@ -1,2 +1,8 @@
-package Min;public interface Iterator {
+package Min;
+
+public interface Iterator {
+
+    boolean hasNext();
+    Number next();
+
 }

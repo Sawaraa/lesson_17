@@ -1,16 +1,10 @@
+package Min;
+
 import Min.Collection;
+
 
 public class Main {
     public static void main(String[] args) {
-
-//        Car car = new Car("ламборджіні", 24);
-//
-//        Car.Engeen eng = car.new Engeen();
-//
-//        Car.A a = new Car.A();
-//
-//        eng.start();
-//        a.start();
 
         Number[] array = {1, 2, 3, 4, 5, 6, 7};
 
@@ -18,6 +12,26 @@ public class Main {
 
         Collection.First firstIterator = collection.new First();
 
+        System.out.println("First inner class");
+
+        while (firstIterator.hasNext()){
+            System.out.println(firstIterator.next());
+        }
+
+        System.out.println();
+
+
+        System.out.println("Second inner class");
+
+        Collection.Second secondIterator = collection.new Second();
+
+        while (secondIterator.hasNext()){
+            System.out.println(secondIterator.next());
+        }
+
+        System.out.println();
+
+        firstIterator.replaceOddWithZero();
 
     }
 }
